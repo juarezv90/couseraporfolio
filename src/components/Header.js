@@ -79,7 +79,7 @@ const Header = () => {
       left={0}
       right={0}
       translateY={0}
-      transform={`translateY:${visible}`}
+      transform={``}
       transitionProperty="transform"
       transitionDuration=".3s"
       transitionTimingFunction="ease-in-out"
