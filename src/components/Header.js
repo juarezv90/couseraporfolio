@@ -79,7 +79,8 @@ const Header = () => {
       left={0}
       right={0}
       translateY={0}
-      transform={``}
+      zIndex={1000}
+      transform={`translateY(${visible}px)`}
       transitionProperty="transform"
       transitionDuration=".3s"
       transitionTimingFunction="ease-in-out"
@@ -100,7 +101,7 @@ const Header = () => {
             >
               {socials.map((item, key) => {
                 return (
-                  <a href={item.url} key={key}>
+                  <a href={item.url} key={key} target="_blank">
                     <FontAwesomeIcon icon={item.icon} size="2x" />
                   </a>
                 );
